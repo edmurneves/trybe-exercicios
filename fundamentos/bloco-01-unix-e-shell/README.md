@@ -1,5 +1,6 @@
-Curso Trybe - Exercícios - Data 20-10-2021
+### Curso Trybe - Exercícios - Data 201-10-2021
 
-- Descrição - Exercícios sobre Teminal e Bash
+## Exercícios sobre o bloco 1 - Terminal e Bash
 
-- Comandos de Terminal
+- Execução de diversos comando de terminal para agilizar
+o processo de execução de tarefas.
