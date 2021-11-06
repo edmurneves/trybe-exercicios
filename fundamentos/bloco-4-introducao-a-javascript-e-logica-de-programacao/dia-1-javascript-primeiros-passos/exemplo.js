@@ -82,18 +82,24 @@ if (peca == "bispo"){
     console.log("Não é uma peça válida")
 } */
 
-const nota = 69;
+/* Exercicio 7
 
-if (nota < 50){
+const nota = 100;
+
+if (nota < 0){
+    console.log("Nota inválida")
+} else if (nota < 50){
     console.log("Nota F")
-} else if (nota >= 50 && nota < 60){
+} else if (nota < 60){
     console.log("Nota E")
-} else if (nota > 60){
+} else if (nota < 70){
     console.log("Nota D")
-} else if (nota > 70){
+} else if (nota < 80){
     console.log("Nota C")
-} else if (nota > 80){
+} else if (nota < 90){
     console.log("Nota B")
-} else {
-    console.log("Nota Invalida")
-}
+} else if (nota <= 100){
+    console.log("Nota A")
+} else if (nota > 100){
+    console.log("Nota inválida")
+} */
