@@ -143,7 +143,7 @@ if ( custoProduto < 0 || valorVenda < 0) {
     console.log('O lucro da venda será de: ', lucro);
 } */
 
-
+/* Exercicio 11
 const salarioBruto = 1100;
 
 let aliquotaINSS;
@@ -175,4 +175,4 @@ if (salarioBase <= 1903.98){
 }
 
 salarioLiquido = salarioBase - aliquotaIR;
-console.log(`O salário liquido será de: ${salarioLiquido}`);
+console.log(`O salário liquido será de: ${salarioLiquido}`); */
