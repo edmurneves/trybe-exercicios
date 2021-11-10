@@ -31,9 +31,54 @@ for (let lineIndex = 0; lineIndex < n; lineIndex += 1) {
   console.log(inputLine);
 }; */
 
-let n = 5;
-let symbol = '*';
+/* 2- Para o segundo exercício, faça o mesmo que antes, mas que imprima um triângulo retângulo com 5 asteriscos de base. Por exemplo:
+Copiar
+n = 5
 
-for( index = 1; index < 5; index += 1){
-    
+*
+**
+***
+****
+***** 
+
+*/
+
+/* let n = 5;
+let symbol = '*';
+let inputline = '';
+
+for(let index = 0; index < 5; index += 1){
+  inputline += symbol;
+  console.log(inputline);    
 }
+
+ */
+/* 3- Agora inverta o lado do triângulo. Por exemplo:
+Copiar
+n = 5
+
+    *
+   **
+  ***
+ ****
+***** */
+
+
+/* let n = 5;
+let symbol = '*';
+let inputLine = '';
+let inputPosition = n;
+
+for(lineIndex = 0; lineIndex < n; lineIndex += 1){
+  for(let columnIndex = 1; columnIndex <= n; columnIndex += 1){
+    if(columnIndex < inputPosition){
+      inputLine = inputLine + ' ';    
+    }else{
+      inputLine = inputLine + symbol;
+    }
+  }
+  console.log(inputLine);
+  inputLine = '';
+  inputPosition -= 1;
+    
+} */
