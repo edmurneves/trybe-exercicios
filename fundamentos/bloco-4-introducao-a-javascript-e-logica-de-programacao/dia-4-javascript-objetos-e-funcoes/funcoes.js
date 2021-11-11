@@ -154,7 +154,7 @@ Valor esperado no retorno da função: 4 . */
   
   console.log(indiceDoMenor([2, 4, 6, 7, 10, 0, -3])); */
 
-function maiorCaractere (caracteres){  
+/* function maiorCaractere (caracteres){  
     let indiceMaior = 0;  
     for (let index in caracteres){
        if (caracteres[index].length > caracteres[indiceMaior].length ){
@@ -162,9 +162,24 @@ function maiorCaractere (caracteres){
        }
           
     }
-    console.log(caracteres[indiceMaior])
-}
+    console.log(caracteres[indiceMaior])}
 
 
-arrCaratere = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+arrCaratere = ['José', 'LucasBiase', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 maiorCaractere(arrCaratere);
+
+Resposta do Cource:
+
+function maiorPalavra(palavras) {
+    let maiorPalavra = palavras[0];
+    for (let indice in palavras) {
+      if (maiorPalavra.length < palavras[indice].length) {
+        maiorPalavra = palavras[indice];
+      }
+    }
+    return maiorPalavra;
+  }
+  
+  console.log(maiorPalavra(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'])); //Fernanda */
+
+  
