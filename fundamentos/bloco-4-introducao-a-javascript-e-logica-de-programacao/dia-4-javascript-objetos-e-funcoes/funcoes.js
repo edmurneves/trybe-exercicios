@@ -54,7 +54,7 @@ for(key in info){
 
 /* Usando o objeto abaixo, faça os exercícios a seguir:
  6 - Acesse as chaves nome , sobrenome e titulo , que está dentro da chave livrosFavoritos , e faça um console.log no seguinte formato: "O livro favorito de Julia Pessoa se chama 'O Pior Dia de Todos'". */
-
+/* 
 let leitor = {
   nome: 'Julia',
   sobrenome: 'Pessoa',
@@ -75,4 +75,96 @@ leitor.livrosFavoritos.push({ titulo: 'Harry Potter e o Prisioneiro de Azkaban',
 
 console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + leitor.livrosFavoritos[1].titulo);
 
-console.log(leitor.nome + ' tem ' +  + leitor.livrosFavoritos.length + ' livros favoritos');
+console.log(leitor.nome + ' tem ' +  + leitor.livrosFavoritos.length + ' livros favoritos'); */
+
+/* Parte II - Funções
+Agora vamos fazer um exercício que vai deixar nítido como funções com responsabilidades bem definidas deixam o código mais bem escrito.
+A manipulação de arrays pode ser complexa em alguns momentos e por isso o JavaScript conta com diversos métodos para a sua manipulação. A documentação é sempre a nossa maior aliada, se você tiver curiosidade de ler mais sobre esses métodos, clique aqui para acessar a documentação completa. Não se preocupe em entender todos os métodos, eles serão trabalhados cada vez com mais frequência durante o curso e sempre que um método novo for necessário ele será ensinado a você.
+Spoiler-alert : para os exercícios do dia, os métodos split , join e reverse podem ser muito úteis. */
+
+/* 1 - Crie uma função que receba uma string e retorne true se for um palíndromo , ou false , se não for. */
+
+/* function verificaPalindromo(palavra) {
+    let palindromo = palavra.split('');   
+    console.log(palindromo);
+    let reverso = palindromo.reverse();
+    console.log(reverso);
+    let palavraInvertida = reverso.join('');
+    console.log(palavraInvertida);
+    if (palavra == palavraInvertida){
+        console.log(true);
+    }else {
+        console.log(false);
+    }
+
+}
+
+verificaPalindromo('regiane'); */
+
+/* function verificaPalindrome(word){
+    for(index in word){
+      if(word[index] != word[(word.length - 1) - index]){
+        console.log(true);
+      }
+    }
+    console.log(true);
+  } */
+/* 
+  function verificaPalindrome(string) {
+    let reverse = string.split('').reverse().join('');
+    if (reverse === string) {
+      console.log(true);
+    } else {
+        console.log(false);
+    }
+  }
+
+  verificaPalindrome('arara'); */
+
+
+  /* 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor.
+Array de teste: [2, 3, 6, 7, 10, 1]; .
+Valor esperado no retorno da função: 4 . */
+
+/* function indiceDoMaior(numeros) {
+    let indiceMaior = 0;
+    for (let indice in numeros) {
+      if (numeros[indiceMaior] < numeros[indice]) {
+        indiceMaior = indice;
+      }
+    }
+    return indiceMaior;
+  }
+  
+  console.log(indiceDoMaior([2, 3, 6, 13, 10, 1])); //4 */
+
+  /* 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor.
+  Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
+  Valor esperado no retorno da função: 6 . */
+
+  /* function indiceDoMenor(numeros) {
+    let indiceMenor = 0;
+    for (let indice in numeros) {
+      if (numeros[indiceMenor] > numeros[indice]) {
+        indiceMenor = indice;
+      }
+    }
+    return indiceMenor;
+  }
+  
+  console.log(indiceDoMenor([2, 4, 6, 7, 10, 0, -3])); */
+
+function maiorCaractere (caracteres){  
+    let indiceMaior = 0;  
+    for (let index in caracteres){
+       if (caracteres[index].length > caracteres[indiceMaior].length ){
+           indiceMaior = index;
+       }
+          
+    }
+    console.log(caracteres[indiceMaior])
+}
+
+
+arrCaratere = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+maiorCaractere(arrCaratere);
