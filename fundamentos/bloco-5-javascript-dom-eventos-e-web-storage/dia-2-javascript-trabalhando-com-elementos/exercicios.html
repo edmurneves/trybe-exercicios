@@ -71,8 +71,56 @@
       const elementSectionCenter = document.createElement('section');
       elementSectionCenter.className = 'center-content';
       elementMain.appendChild(elementSectionCenter);
-      console.log(elementSectionCenter);      
+      console.log(elementSectionCenter);
+      
+      const elementParagraf = document.createElement('p');
+      elementParagraf.innerHTML = 'Lorem ipsum dolor sit amet consectetur, <strong> adipisicing </strong> elit. Voluptatem molestiae culpa quas reprehenderit odit tempore placeat vel hic modi nesciunt, velit nobis ea libero numquam explicabo natus sequi quia reiciendis!';
+      elementSectionCenter.appendChild(elementParagraf);
+      console.log(elementParagraf)
 
+      const elementSectionLeft = document.createElement('section');
+      elementSectionLeft.className = 'left-content';
+      elementMain.appendChild(elementSectionLeft);
+      console.log(elementSectionLeft);
+
+      const elementSectionRight = document.createElement('section');
+      elementSectionRight.className = 'right-content';
+      elementMain.appendChild(elementSectionRight);
+      console.log(elementSectionRight);
+
+      const elementImage = document.createElement('img');
+      elementImage.src = 'https://picsum.photos/200';
+      elementImage.className = 'small-image';
+      elementSectionLeft.appendChild(elementImage);
+      console.log(elementImage);
+
+      const elementList = document.createElement('ul');
+      //elementSectionRight.appendChild(elementList);
+
+      let elementListItens = [
+        'um',
+        'dois',
+        'três',
+        'quatro',
+        'cinco',
+        'seis',
+        'sete',
+        'oito',
+        'nove',
+        'dez'
+      ];
+
+      for (let index = 0; index < elementListItens.length; index += 1){
+        let lista = elementListItens[index];
+        let elementListItem = document.createElement('li');
+        elementListItem.innerText = lista;
+        //console.log(elementListItem);
+        elementList.appendChild(elementListItem);        
+      }
+           
+      
+      
     </script>
   </body>
 </html>
+
