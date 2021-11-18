@@ -94,8 +94,9 @@
       elementSectionLeft.appendChild(elementImage);
       console.log(elementImage);
 
-      const elementList = document.createElement('ul');
-      //elementSectionRight.appendChild(elementList);
+      let elementList = document.createElement('ul');
+      elementSectionRight.appendChild(elementList);
+      console.log(elementList);
 
       let elementListItens = [
         'um',
@@ -110,15 +111,15 @@
         'dez'
       ];
 
-      for (let index = 0; index < elementListItens.length; index += 1){
-        let lista = elementListItens[index];
-        let elementListItem = document.createElement('li');
-        elementListItem.innerText = lista;
-        //console.log(elementListItem);
-        elementList.appendChild(elementListItem);        
+      for (let index = 0; index < elementListItens.length; index += 1) {
+        let elementItem = document.createElement('li');
+        elementItem.innerText = elementListItens[index];
+        elementList.appendChild(elementItem);
       }
-           
       
+
+
+
       
     </script>
   </body>
