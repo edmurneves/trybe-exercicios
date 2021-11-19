@@ -62,44 +62,44 @@
       elementH1.className = 'title';
       elementH1.innerText = 'Exercício 5.2 - JavaScript DOM';
       document.body.appendChild(elementH1);
-      console.log(elementH1)
+      //console.log(elementH1)
 
       const elementMain = document.createElement('main');
       elementMain.className ='main-content';
       document.body.appendChild(elementMain);
-      console.log(elementMain);
+      //console.log(elementMain);
 
       const elementSectionCenter = document.createElement('section');
       elementSectionCenter.className = 'center-content';
       elementMain.appendChild(elementSectionCenter);
-      console.log(elementSectionCenter);
+      //console.log(elementSectionCenter);
       
       const elementParagraf = document.createElement('p');
       elementParagraf.innerHTML = 'Lorem ipsum dolor sit amet consectetur, <strong> adipisicing </strong> elit. Voluptatem molestiae culpa quas reprehenderit odit tempore placeat vel hic modi nesciunt, velit nobis ea libero numquam explicabo natus sequi quia reiciendis!';
       elementSectionCenter.appendChild(elementParagraf);
-      console.log(elementParagraf)
+      //console.log(elementParagraf)
 
       const elementSectionLeft = document.createElement('section');
       elementSectionLeft.className = 'left-content';
       elementMain.appendChild(elementSectionLeft);
-      console.log(elementSectionLeft);
+      //console.log(elementSectionLeft);
 
       const elementSectionRight = document.createElement('section');
       elementSectionRight.className = 'right-content';
       elementMain.appendChild(elementSectionRight);
-      console.log(elementSectionRight);
+      //console.log(elementSectionRight);
 
       const elementImage = document.createElement('img');
       elementImage.src = 'https://picsum.photos/200';
       elementImage.className = 'small-image';
       elementSectionLeft.appendChild(elementImage);
-      console.log(elementImage);
+      //console.log(elementImage);
 
       let elementList = document.createElement('ul');
       elementSectionRight.appendChild(elementList);
-      console.log(elementList);
+      //console.log(elementList);
 
-      let elementListItens = [
+      let arrList = [
         'um',
         'dois',
         'três',
@@ -112,26 +112,73 @@
         'dez'
       ];
 
-      for (let index = 0; index < elementListItens.length; index += 1) {
+      for (let index = 0; index < arrList.length; index += 1) {
         let elementItem = document.createElement('li');
-        elementItem.innerText = elementListItens[index];
+        elementItem.innerText = arrList[index];
+        elementItem.className = 'itemfromList';
         elementList.appendChild(elementItem);
       }
+      //console.log(elementList);
 
       for (index = 0; index < 3; index +=1){
         let elementH3 = document.createElement('h3');
         elementH3.className = 'description';
         elementH3.innerText = 'Adicionado dinamicamente!';
         elementMain.appendChild(elementH3);
-        console.log(elementH3);
+        //console.log(elementH3);
       }
       
        const sectionLeftContent = document.getElementsByClassName('left-content')[0];
-       console.log(sectionLeftContent)
+       //console.log(sectionLeftContent)
        elementMain.removeChild(sectionLeftContent);
 
+       const sectionRightContent = document.getElementsByClassName('right-content')[0];
+       //console.log(sectionRightContent);
+       sectionRightContent.style.marginRight = 'auto';
+
+       /* const mainContent = document.getElementsByClassName('main-content')[0];
+       mainContent.style.backgroundColor = 'green'
+       console.log(mainContent); ou a opção abaixo do course
+       utilizando parentNode */
+
+       const sectionCenterContent = document.getElementsByClassName('center-content')[0];
+        sectionCenterContent.parentNode.style.backgroundColor = 'green';
 
 
+
+        elementList.lastChild.remove(); //desta forma apaga o item normalmente
+        elementList.lastChild.remove();
+
+        ul.lastChild.remove(); //desta forma não funciona (gabarito do course)
+        ul.lastChild.remove();
+
+
+
+
+
+       
+         
+
+
+
+
+
+       
+        
+        
+
+        /* let removeListItens = document.querySelectorAll('elementList');
+        console.log(removeListItens)
+
+        for (let index = 0; index < removeListItens.length; index += 1) {
+          let element = removeListItens[index];
+          
+
+           if (element.innerText.includes('nove')) {
+            elementList.removeChild(element);
+          } 
+        }
+        //console.log(removeListItens); */
       
     </script>
   </body>
