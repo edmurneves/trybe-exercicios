@@ -306,3 +306,5 @@ function createStateOptions() {
     let clearButton = document.querySelector('.clear-button');
     clearButton.addEventListener('click', clearFields);
   }
+
+  
